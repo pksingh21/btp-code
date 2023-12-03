@@ -1,0 +1,12 @@
+\chapter{ The Problem}
+
+
+In the current implementation for the CP-ABE include only AND and OR gates which allows us to define the access policy based on them for example : ((“Public Corruption Office” AND (“Knoxville” OR “San Francisco”)) OR(management-level > 5) OR “Name: CharlieEppes”).
+However, AND gate alone cannot designate intended users well in many cases. Thus the schemes supporting threshold gates have been attracting much more attention. An encryption and decryption algorithm with fewer participating attributes and less complex policies is preferred. The cost increases linearly with the attribute number. However, the value comparison in access policy should expand the attribute number of the structure. Thus, an inefficient mechanism may affect the feasibility of the scheme. 
+\\
+
+\noindent \textbf{Objective:}\par
+The comparison operation between a user’s and a file’s attributes only includes “=”.These attributes are numerical information,and will probably be used in comparison. For instance, a user may be assigned a key embedded with access policy as: “(Distance \(<\) 1000 miles) AND (Date \(>\)  May 1st)” For example, “Distance \(<\) 1000 miles” can be represented as a formula like (“Distance = 999 miles” or “Distance = 998 miles”  or  ... “Distance = 0 miles”), but the overhead increases linearly with the growth of attribute’s value space, which will become a performance bottleneck of the system. This scheme divided such numerical attribute into pieces in units of bits as several sub-attributes to solve this problem. However, the mechanism to design a numeric-comparison policy is too complex, and the most essential problem is that the additional overhead is still relatively high in both Space and Time.
+
+
+

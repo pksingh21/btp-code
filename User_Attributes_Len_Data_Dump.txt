@@ -1,0 +1,170 @@
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  16
+Keygen time:  98263.50212097168  microseconds
+Encryption time:  172733.30688476562  microseconds
+Decryption time:  176262.85552978516  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  17
+Keygen time:  94036.57913208008  microseconds
+Encryption time:  172916.88919067383  microseconds
+Decryption time:  176823.85444641113  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  18
+Keygen time:  98385.09559631348  microseconds
+Encryption time:  174163.818359375  microseconds
+Decryption time:  178805.11283874512  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  19
+Keygen time:  102514.02854919434  microseconds
+Encryption time:  175528.76472473145  microseconds
+Decryption time:  179308.1760406494  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  20
+Keygen time:  111621.61827087402  microseconds
+Encryption time:  185773.37265014648  microseconds
+Decryption time:  189362.0491027832  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  21
+Keygen time:  110635.51902770996  microseconds
+Encryption time:  184854.98428344727  microseconds
+Decryption time:  189315.3190612793  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  22
+Keygen time:  113694.66781616211  microseconds
+Encryption time:  185194.2539215088  microseconds
+Decryption time:  189076.18522644043  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  23
+Keygen time:  116062.16430664062  microseconds
+Encryption time:  186621.90437316895  microseconds
+Decryption time:  190446.6152191162  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  24
+Keygen time:  122309.92317199707  microseconds
+Encryption time:  193711.2808227539  microseconds
+Decryption time:  197352.40936279297  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  25
+Keygen time:  134187.2215270996  microseconds
+Encryption time:  205198.7648010254  microseconds
+Decryption time:  208841.80068969727  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  26
+Keygen time:  127326.48849487305  microseconds
+Encryption time:  199995.0408935547  microseconds
+Decryption time:  204391.0026550293  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  27
+Keygen time:  131513.11874389648  microseconds
+Encryption time:  202253.3416748047  microseconds
+Decryption time:  206019.16313171387  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  28
+Keygen time:  137164.83116149902  microseconds
+Encryption time:  208689.92805480957  microseconds
+Decryption time:  212475.53825378418  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  29
+Keygen time:  140966.41540527344  microseconds
+Encryption time:  211098.67095947266  microseconds
+Decryption time:  215272.6650238037  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  30
+Keygen time:  142351.1505126953  microseconds
+Encryption time:  221703.29093933105  microseconds
+Decryption time:  228696.5847015381  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  31
+Keygen time:  151681.18476867676  microseconds
+Encryption time:  228932.38067626953  microseconds
+Decryption time:  232837.67700195312  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  32
+Keygen time:  153855.0853729248  microseconds
+Encryption time:  228078.84216308594  microseconds
+Decryption time:  232228.99436950684  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  33
+Keygen time:  158683.77685546875  microseconds
+Encryption time:  230023.38409423828  microseconds
+Decryption time:  233502.38800048828  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  34
+Keygen time:  162837.50534057617  microseconds
+Encryption time:  244413.8526916504  microseconds
+Decryption time:  248508.45336914062  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  35
+Keygen time:  167139.53018188477  microseconds
+Encryption time:  239101.17149353027  microseconds
+Decryption time:  242638.11111450195  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  36
+Keygen time:  170611.85836791992  microseconds
+Encryption time:  241944.7898864746  microseconds
+Decryption time:  246085.88218688965  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  37
+Keygen time:  174404.38270568848  microseconds
+Encryption time:  245809.07821655273  microseconds
+Decryption time:  249954.7004699707  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  38
+Keygen time:  180778.74183654785  microseconds
+Encryption time:  264464.8551940918  microseconds
+Decryption time:  268859.86328125  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  39
+Keygen time:  185428.85780334473  microseconds
+Encryption time:  258422.1363067627  microseconds
+Decryption time:  262490.51094055176  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  40
+Keygen time:  193558.6929321289  microseconds
+Encryption time:  267733.097076416  microseconds
+Decryption time:  271413.32626342773  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  41
+Keygen time:  195524.2156982422  microseconds
+Encryption time:  267750.50163269043  microseconds
+Decryption time:  271843.19496154785  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  42
+Keygen time:  194927.45399475098  microseconds
+Encryption time:  266746.04415893555  microseconds
+Decryption time:  270256.99615478516  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  43
+Keygen time:  200576.5438079834  microseconds
+Encryption time:  271617.4125671387  microseconds
+Decryption time:  275148.1533050537  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  44
+Keygen time:  203255.65338134766  microseconds
+Encryption time:  274470.8061218262  microseconds
+Decryption time:  278447.38960266113  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  45
+Keygen time:  207540.03524780273  microseconds
+Encryption time:  288476.46713256836  microseconds
+Decryption time:  293093.6813354492  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  46
+Keygen time:  219642.87757873535  microseconds
+Encryption time:  294019.2222595215  microseconds
+Decryption time:  298382.7590942383  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  47
+Keygen time:  220503.0918121338  microseconds
+Encryption time:  291654.3483734131  microseconds
+Decryption time:  295547.7237701416  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  48
+Keygen time:  221922.6360321045  microseconds
+Encryption time:  292336.22550964355  microseconds
+Decryption time:  296482.5630187988  microseconds
+******************************
+ACCESS POLICY LENGTH :  15  ATTRIBUTE POLICY LENGHT :  49
+Keygen time:  225517.27294921875  microseconds
+Encryption time:  299253.9405822754  microseconds
+Decryption time:  303113.2221221924  microseconds
+******************************

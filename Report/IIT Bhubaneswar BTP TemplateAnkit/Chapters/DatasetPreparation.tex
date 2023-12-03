@@ -1,0 +1,131 @@
+
+\lstdefinestyle{mystyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{green!40!black},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    frame=single,
+    breaklines=true,
+    showstringspaces=false,
+    captionpos=b,
+    tabsize=4
+}
+
+\chapter{Charm Crypto Library And My Contribution}
+\section{Required Auxillary Functions}
+
+To do this we have defined some auxiliary functions over existing charm crypto library whose screen shots have been attached below :
+\begin{itemize}
+    \item \textbf{def encode\_number} : is a function that returns the 0-Encoding and 1-Encoding of a number which is used further to perform the binary comparison for 2 numbers.
+    \item \textbf{def modify\_access\_policy} : is a function that takes input the access policy with comparable range comparisons and performs the required replacements with the given 0 and 1 attribute sets such that the binary comparison can be performed by the access structure in our tree.
+    \item \textbf{def modify\_not\_equal\_condition} : is a function that is responsible for implementing the \(a !=b \) operation using the preexisting range comparison operators whose maths has been previously explained.
+\end{itemize}
+
+
+
+\begin{lstlisting}[style=mystyle, caption={Encode Number Function}, label=yourlabel]
+
+# In each of the 0-encoding and 1-encoding sets, E0
+# a and E1
+# b , the binary strings are arranged in the
+# decreasing order of string length (i.e., the number of digits of a binary sequence)
+
+
+def encode_number(x):
+    # Convert the integer to a binary string
+    binary_string = bin(x)[2:]
+
+    # Pad the binary string with leading zeros if needed
+    # standardize all binary strings to be of length 32
+    binary_string = binary_string.zfill(32)
+    # Initialize 0-encoding and 1-encoding sets
+    S0_x = set()
+    S1_x = set()
+
+    # Iterate over the binary string and populate the sets
+    for i in range(len(binary_string)):
+        prefix = binary_string[:i+1]
+        if prefix[-1] == '0':
+            # Flip the least significant bit when adding to S0_x
+            S0_x.add(prefix[:-1] + '1')
+        else:
+            S1_x.add(prefix)
+    # convert the binary to decimal
+    # sort S0_x and S1_x by length of the binary string
+    S0_x = sorted(S0_x, key=lambda x: len(x), reverse=True)
+    S1_x = sorted(S1_x, key=lambda x: len(x), reverse=True)
+    return S0_x, S1_x
+
+\end{lstlisting}
+
+
+
+\begin{lstlisting}[style=mystyle, caption={Function for implementing a!=b operator}, label=yourlabel]
+
+def modify_not_equal_conditions(access_policy):
+    pattern = re.compile(r'(\w+)\s*(!=)\s*(\d+)')
+    matches = pattern.findall(access_policy)
+    for match in matches:
+        identifier, operator, number = match
+        S0_x, S1_x = encode_number(int(number))
+        new_condition = f'({identifier} < {number} OR {identifier} > {number})'
+        access_policy = access_policy.replace(
+            f'{identifier} {operator} {number}', new_condition)
+    return access_policy
+\end{lstlisting}
+\begin{lstlisting}[style=mystyle, caption={Function for modifying access policy for Range comparison}, label=yourlabel]
+def modify_access_policy(access_policy):
+    access_policy = modify_not_equal_conditions(access_policy)
+    pattern = re.compile(r'(\w+)\s*([<>])\s*(\d+)')
+    matches = pattern.findall(access_policy)
+    for match in matches:
+        identifier, operator, number = match
+        access_policy = access_policy.replace(
+            f'{identifier} {operator} {number}', f'({identifier} {operator} {number})')
+    matches = pattern.findall(access_policy)
+    for match in matches:
+        identifier, operator, number = match
+        S0_x, S1_x = encode_number(int(number))
+        if operator == '<':
+            new_condition = ' OR '.join(f'{identifier}{"!!"}{x}' for x in S1_x)
+        elif operator == '>':  # operator == '>'
+            new_condition = ' OR '.join(f'{identifier}{"@@"}{x}' for x in S0_x)
+        access_policy = access_policy.replace(
+            f'({identifier} {operator} {number})', f'({new_condition})')
+    pattern = re.compile(r'(\w+) = (\w+)')
+    modified_policy = access_policy
+    for match in pattern.findall(access_policy):
+        old_expression = f'{match[0]} = {match[1]}'
+        new_expression = f'({match[0]}$${match[1]})'
+        new_expressionx = new_expression.upper()
+        modified_policy = modified_policy.replace(
+            old_expression, new_expressionx)
+    return modified_policy
+\end{lstlisting}
+\begin{lstlisting}[style=mystyle, caption={Function for modifying attributes for range comparison}, label=yourlabel]
+def process_attributes(attributes):
+    pattern = re.compile(r'(\w+) = (\d+)')
+    for i, attribute in enumerate(attributes):
+        match = pattern.match(attribute)
+        if match:
+            attr_name = match.group(1).upper()
+            attr_value = int(match.group(2))
+            S0_attr, S1_attr = encode_number(attr_value)
+            attr_encodings = [f'{attr_name}!!{x}' for x in S0_attr] + \
+                [f'{attr_name}@@{x}' for x in S1_attr]
+            attributes[i:i+1] = attr_encodings
+    pattern = re.compile(r'(\w+) = (\w+)')
+    for i, attribute in enumerate(attributes):
+        match = pattern.match(attribute)
+        if match:
+            old_expression = attribute
+            # capitalize the new_expression
+            new_expression = f'{match[1]}$${match[2]}'
+            new_expressionx = new_expression.upper()
+            attributes[i] = new_expressionx
+    return attributes
+
+
+\end{lstlisting}

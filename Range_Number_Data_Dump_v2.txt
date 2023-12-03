@@ -1,0 +1,195 @@
+RANGE BEING USED IN ACCESS_POLICY 1 79
+Keygen time:  125217.43774414062  microseconds
+Encryption time:  256941.0800933838  microseconds
+Decryption time:  274717.0925140381  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 2 78
+Keygen time:  123725.65269470215  microseconds
+Encryption time:  250357.38945007324  microseconds
+Decryption time:  266807.55615234375  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 3 77
+Keygen time:  123387.81356811523  microseconds
+Encryption time:  246391.29638671875  microseconds
+Decryption time:  262688.39836120605  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 4 76
+Keygen time:  126209.25903320312  microseconds
+Encryption time:  249746.56105041504  microseconds
+Decryption time:  266291.61834716797  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 5 75
+Keygen time:  123111.24801635742  microseconds
+Encryption time:  245068.55010986328  microseconds
+Decryption time:  261528.49197387695  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 6 74
+Keygen time:  123171.80633544922  microseconds
+Encryption time:  242848.39630126953  microseconds
+Decryption time:  258972.16796875  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 7 73
+Keygen time:  122978.21044921875  microseconds
+Encryption time:  238468.88542175293  microseconds
+Decryption time:  254445.55282592773  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 8 72
+Keygen time:  123115.77796936035  microseconds
+Encryption time:  242858.6483001709  microseconds
+Decryption time:  258770.46585083008  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 9 71
+Keygen time:  123468.16062927246  microseconds
+Encryption time:  246101.37939453125  microseconds
+Decryption time:  263158.08296203613  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 10 70
+Keygen time:  123343.22929382324  microseconds
+Encryption time:  242510.0803375244  microseconds
+Decryption time:  258528.9478302002  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 11 69
+Keygen time:  123113.39378356934  microseconds
+Encryption time:  238890.6478881836  microseconds
+Decryption time:  254523.51570129395  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 12 68
+Keygen time:  123163.22326660156  microseconds
+Encryption time:  239157.19985961914  microseconds
+Decryption time:  254705.19065856934  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 13 67
+Keygen time:  123417.85430908203  microseconds
+Encryption time:  239288.330078125  microseconds
+Decryption time:  254899.9786376953  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 14 66
+Keygen time:  123158.69331359863  microseconds
+Encryption time:  234613.41857910156  microseconds
+Decryption time:  255910.15815734863  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 15 65
+Keygen time:  123384.23728942871  microseconds
+Encryption time:  230979.20417785645  microseconds
+Decryption time:  245894.9089050293  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 16 64
+Keygen time:  123614.07279968262  microseconds
+Encryption time:  238954.5440673828  microseconds
+Decryption time:  255307.9128265381  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 17 63
+Keygen time:  123246.66976928711  microseconds
+Encryption time:  252994.77577209473  microseconds
+Decryption time:  269850.7308959961  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 18 62
+Keygen time:  123869.8959350586  microseconds
+Encryption time:  250594.6159362793  microseconds
+Decryption time:  267352.3426055908  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 19 61
+Keygen time:  123728.03688049316  microseconds
+Encryption time:  245645.99990844727  microseconds
+Decryption time:  262760.87760925293  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 20 60
+Keygen time:  125912.90473937988  microseconds
+Encryption time:  248457.9086303711  microseconds
+Decryption time:  264727.5924682617  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 21 59
+Keygen time:  123413.3243560791  microseconds
+Encryption time:  246111.86981201172  microseconds
+Decryption time:  262803.316116333  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 22 58
+Keygen time:  123548.03085327148  microseconds
+Encryption time:  242877.96020507812  microseconds
+Decryption time:  258780.47943115234  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 23 57
+Keygen time:  123404.50286865234  microseconds
+Encryption time:  239028.9306640625  microseconds
+Decryption time:  254503.72695922852  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 24 56
+Keygen time:  123610.4965209961  microseconds
+Encryption time:  242488.38424682617  microseconds
+Decryption time:  259308.0997467041  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 25 55
+Keygen time:  123469.82955932617  microseconds
+Encryption time:  246692.65747070312  microseconds
+Decryption time:  263050.79460144043  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 26 54
+Keygen time:  123759.26971435547  microseconds
+Encryption time:  243162.8704071045  microseconds
+Decryption time:  258972.8832244873  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 27 53
+Keygen time:  123296.73767089844  microseconds
+Encryption time:  238946.43783569336  microseconds
+Decryption time:  254417.41943359375  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 28 52
+Keygen time:  123195.40977478027  microseconds
+Encryption time:  239206.55250549316  microseconds
+Decryption time:  254734.99298095703  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 29 51
+Keygen time:  123375.89263916016  microseconds
+Encryption time:  238893.0320739746  microseconds
+Decryption time:  255234.0030670166  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 30 50
+Keygen time:  123147.48764038086  microseconds
+Encryption time:  235396.3851928711  microseconds
+Decryption time:  250561.71417236328  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 31 49
+Keygen time:  123188.97247314453  microseconds
+Encryption time:  232554.67414855957  microseconds
+Decryption time:  247620.1057434082  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 32 48
+Keygen time:  123799.56245422363  microseconds
+Encryption time:  242920.8755493164  microseconds
+Decryption time:  258840.32249450684  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 33 47
+Keygen time:  123048.54393005371  microseconds
+Encryption time:  255093.57452392578  microseconds
+Decryption time:  271782.87506103516  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 34 46
+Keygen time:  123277.66418457031  microseconds
+Encryption time:  244729.28047180176  microseconds
+Decryption time:  261416.91207885742  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 35 45
+Keygen time:  123425.00686645508  microseconds
+Encryption time:  241929.292678833  microseconds
+Decryption time:  257867.09785461426  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 36 44
+Keygen time:  123646.49772644043  microseconds
+Encryption time:  243811.36894226074  microseconds
+Decryption time:  259702.4440765381  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 37 43
+Keygen time:  123362.30278015137  microseconds
+Encryption time:  242868.18504333496  microseconds
+Decryption time:  258616.68586730957  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 38 42
+Keygen time:  124447.82257080078  microseconds
+Encryption time:  242000.81825256348  microseconds
+Decryption time:  257547.14012145996  microseconds
+******************************
+RANGE BEING USED IN ACCESS_POLICY 39 41
+Keygen time:  123320.8179473877  microseconds
+Encryption time:  236088.27590942383  microseconds
+Decryption time:  251689.67247009277  microseconds
+******************************

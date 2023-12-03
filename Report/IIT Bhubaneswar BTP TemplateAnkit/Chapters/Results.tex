@@ -1,0 +1,112 @@
+\lstdefinestyle{mystyle}{
+    language=Python,
+    basicstyle=\ttfamily\small,
+    commentstyle=\color{green!40!black},
+    keywordstyle=\color{blue},
+    numberstyle=\tiny\color{gray},
+    numbers=left,
+    frame=single,
+    breaklines=true,
+    showstringspaces=false,
+    captionpos=b,
+    tabsize=4
+}
+
+\chapter{Sample Code For Encrypting a text file}
+
+\begin{lstlisting}[style=mystyle, caption={Sample Code For Ecrypting a File}, label=yourlabel]
+import random
+from charm.toolbox.pairinggroup import PairingGroup
+from charm.schemes.abenc.abenc_bsw07 import CPabe_BSW07
+from charm.adapters.abenc_adapt_hybrid import HybridABEnc
+import pickle
+import time
+import re
+#assumed function definitions given previously
+def test(access_policy_len, extra_attribute_lenght, rangeNum1, rangeNum2):
+    start_time = time.time()
+    groupObj = PairingGroup('SS512')
+    cpabe = CPabe_BSW07(groupObj)
+    hyb_abe = HybridABEnc(cpabe, groupObj)
+    (pk, mk) = hyb_abe.setup()
+    access_policy = '((four and three) and (two or one) and (ran != 120) and (age < 25 and age > 10))'
+    # access_policy = f'(age < {rangeNum2}  and age > {rangeNum1})'
+    # print("RANGE BEING USED IN ACCESS_POLICY", rangeNum1, rangeNum2)
+    # print("ACCESS POLICY LENGTH : ", access_policy_len,
+        #   " ATTRIBUTE POLICY LENGHT : ", extra_attribute_lenght)
+    new_access_policy = modify_access_policy(access_policy)
+    # benchmark_access_policy = modify_access_policyx(
+        # new_access_policy, access_policy_len)
+    # print(benchmark_access_policy)
+    # print(modify_access_policyx(access_policy), "ok")
+    attributes = ['ONE', 'TWO', 'THREE','Prof',
+                  'FOUR', 'ran = 121', 'age = 24', 'collegeTeacher = XYZ']
+    # attributes = [f'age = {(rangeNum1+rangeNum2)//2}']
+    # print(attributes,access_policy)
+    # attributes = generate_attributes(
+        # benchmark_access_policy, extra_attribute_lenght)
+    processed_attributes = process_attributes(attributes)
+    # print(len(processed_attributes),len(benchmark_access_policy),benchmark_access_policy)
+    print(processed_attributes, "X")
+    print(new_access_policy,'new Access policy')
+    # print(processed_attributes,'new processedd attributes')
+    sk = hyb_abe.keygen(pk, mk, processed_attributes)
+    # print(len(attributes), "len")
+    keygen_time = time.time() - start_time
+    print("Keygen time: ", keygen_time*1e6, " microseconds")
+    sourcefile = open("source.txt", 'rb')
+    plaintext = sourcefile.read()
+    sourcefile.close()
+
+    encryptedfile = open("encrypted.txt", 'wb')
+    ciphertext = hyb_abe.encrypt(pk, plaintext, new_access_policy)
+    # ciphertext = hyb_abe.encrypt(pk, plaintext, benchmark_access_policy)
+    encryption_time = time.time() - start_time
+    print("Encryption time: ", encryption_time*1e6, " microseconds")
+    ciphertext["c1"]["C"] = groupObj.serialize(ciphertext["c1"]["C"])
+    for key in ciphertext["c1"]["Cy"]:
+        ciphertext["c1"]["Cy"][key] = groupObj.serialize(
+            ciphertext["c1"]["Cy"][key])
+    ciphertext["c1"]["C_tilde"] = groupObj.serialize(
+        ciphertext["c1"]["C_tilde"])
+    for key in ciphertext["c1"]["Cyp"]:
+        ciphertext["c1"]["Cyp"][key] = groupObj.serialize(
+            ciphertext["c1"]["Cyp"][key])
+    pickle.dump(ciphertext, encryptedfile)
+    encryptedfile.close()
+
+    encryptedfile = open("encrypted.txt", 'rb')
+    ciphertext2 = pickle.load(encryptedfile)
+    ciphertext2["c1"]["C"] = groupObj.deserialize(ciphertext2["c1"]["C"])
+    for key in ciphertext2["c1"]["Cy"]:
+        ciphertext2["c1"]["Cy"][key] = groupObj.deserialize(
+            ciphertext2["c1"]["Cy"][key])
+    ciphertext2["c1"]["C_tilde"] = groupObj.deserialize(
+        ciphertext2["c1"]["C_tilde"])
+    for key in ciphertext2["c1"]["Cyp"]:
+        ciphertext2["c1"]["Cyp"][key] = groupObj.deserialize(
+            ciphertext2["c1"]["Cyp"][key])
+    try :
+        print(hyb_abe.decrypt(pk, sk, ciphertext2), plaintext)
+        ans = hyb_abe.decrypt(pk, sk, ciphertext2)
+    except :    
+        return
+    decryption_time = time.time() - start_time
+    print("Decryption time: ", decryption_time*1e6, " microseconds")
+    encryptedfile.close()
+
+
+if __name__ == "__main__":
+    debug = True
+    # for i in range(1,42):
+        # test(i,0,0,0)
+        # print('*'*30)
+    # for i in range(1, 100000,50):
+        # if 1e5-i > i:
+            # test(1, i, i, 100000-i)
+            # print('*'*30)
+    # for i in range(1, 35):
+        # test(15, i, 23, 23)
+        # print('*'*30)
+    test(0,0,0,0)
+\end{lstlisting}
